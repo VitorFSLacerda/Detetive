@@ -9,7 +9,7 @@ class Anotation:  Node {
     func add(_ note: String) {
         if !notes.contains(note) {
             notes.append(note)
-            print("Anotação adicionada: \(note)")
+            print("\nAnotação adicionada: \(note)")
         }
     }
 
@@ -22,5 +22,9 @@ class Anotation:  Node {
                 print("-- \(note)")
             }
         }
+    }
+    
+    override func choices() {
+        print("0. Voltar")
     }
 }

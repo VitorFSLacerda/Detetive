@@ -76,19 +76,24 @@ class CreationTree {
 
         roomTwo.addSon(firstCluePoolArea)
         roomTwo.addSon(secondCluePoolArea)
+        
+        
+        suspect.addSon(julieta)
+        suspect.addSon(alex)
+        suspect.addSon(clara)
+        suspect.addSon(enzo)
+        suspect.addSon(samuel)
     }
     
     
     func runGame(){
         
         var answer: String?
+        print("Você está em: \(current.name)\n")
         while true{
-            print("Você está em: \(current.name)\n")
-        
+            //clearTerminal()
             print("O que deseja fazer? Digite o número da escolha:\n\n")
             current.choices()
-            
-            print("\nAnswer: ", terminator: "")
             answer = readLine()
             
             if answer == "0" {
@@ -106,7 +111,27 @@ class CreationTree {
             }  else if answer == "3"{
                 current = current.sons[2]
             }
+            
+            print("Você está em: \(current.name)\n")
+            
+            if current.name == "Anotações" {
+                notes.show()
+                
+            }
+            
+            if let clue = current as? Clue {
+                clue.showClue()
+                notes.add(clue.description)
+            }
+            
 
+
+            if let suspect = current as? Suspect, current.dad?.name == "Suspeitos" {
+                suspect.showEndStory()
+                print("Fim de jogo.")
+                return
+            }
+            
         }
     }
     

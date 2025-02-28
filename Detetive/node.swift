@@ -15,18 +15,17 @@ class Node {
     
     
     func choices() {
-        if sons.isEmpty{
-            print("\nNenhuma opção disponível.")
-            return
-        }
-        print("\nOpções disponíveis em \(name)")
-        for(index, son) in sons.enumerated(){
-            print("\(index + 1). \(son.name) ")
-        }
         if  name == "Menu"{
             print("0. Sair")
         } else{
             print("0. Voltar")
         }
+        if sons.isEmpty{
+            return
+        }
+        for(index, son) in sons.enumerated(){
+            print("\(index + 1). \(son.name) ")
+        }
+
     }
 }

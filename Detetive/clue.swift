@@ -9,6 +9,6 @@ class Clue: Node {
     }
 
     func showClue(){
-        print("Pista encontrada \(description).")
+        print("Pista encontrada: \(description).")
     }
 }
