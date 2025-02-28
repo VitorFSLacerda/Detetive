@@ -13,6 +13,7 @@
 		E59FBC9C2D70A3EA00184727 /* optionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC9B2D70A3EA00184727 /* optionNode.swift */; };
 		E59FBC9E2D70B1A300184727 /* clue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC9D2D70B1A300184727 /* clue.swift */; };
 		E59FBCA02D70B3B200184727 /* navegationTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC9F2D70B3B200184727 /* navegationTree.swift */; };
+		E5F7DBD72D71CE6D00913925 /* node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7DBD62D71CE6D00913925 /* node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		E59FBC9B2D70A3EA00184727 /* optionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionNode.swift; sourceTree = "<group>"; };
 		E59FBC9D2D70B1A300184727 /* clue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clue.swift; sourceTree = "<group>"; };
 		E59FBC9F2D70B3B200184727 /* navegationTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navegationTree.swift; sourceTree = "<group>"; };
+		E5F7DBD62D71CE6D00913925 /* node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				E501045F2D6E02B90046320C /* main.swift */,
-				E54010452D6FA3C700B1CDDD /* suspect.swift */,
-				E59FBC972D70947600184727 /* anotation.swift */,
+				E5F7DBD62D71CE6D00913925 /* node.swift */,
 				E59FBC9B2D70A3EA00184727 /* optionNode.swift */,
 				E59FBC9D2D70B1A300184727 /* clue.swift */,
+				E54010452D6FA3C700B1CDDD /* suspect.swift */,
+				E59FBC972D70947600184727 /* anotation.swift */,
 				E59FBC9F2D70B3B200184727 /* navegationTree.swift */,
 			);
 			path = Detetive;
@@ -137,6 +140,7 @@
 			files = (
 				E59FBC9E2D70B1A300184727 /* clue.swift in Sources */,
 				E59FBC9C2D70A3EA00184727 /* optionNode.swift in Sources */,
+				E5F7DBD72D71CE6D00913925 /* node.swift in Sources */,
 				E50104602D6E02B90046320C /* main.swift in Sources */,
 				E59FBCA02D70B3B200184727 /* navegationTree.swift in Sources */,
 				E59FBC982D70947600184727 /* anotation.swift in Sources */,

@@ -1,24 +1,17 @@
-import Foundation
-
 class Anotation {
-    var notes: [String] = []
-    weak var dad: OptionNode?
-    
-    init(dad: OptionNode? = nil) {
-        self.dad = dad
-    }
-    
-    func addNotes(_ note: String) {
+    private var notes: [String] = []
+
+    func add(_ note: String) {
         if !notes.contains(note) {
             notes.append(note)
             print("📝 Anotação adicionada: \(note)")
         }
     }
 
-    func showNotes() {
+    func show() {
         print("\n📓 Anotações:")
         if notes.isEmpty {
-            print("Nenhuma anotação registrada ainda.")
+            print("Nenhuma anotação registrada.")
         } else {
             for note in notes {
                 print("-- \(note)")

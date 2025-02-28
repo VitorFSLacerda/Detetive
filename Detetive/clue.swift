@@ -1,15 +1,14 @@
 import Foundation
 
-class Clue {
-    let name: String
-    weak var dad: OptionNode?
+class Clue: Node {
+    let description: String
 
-    init(name: String, dad: OptionNode? = nil) {
-        self.name = name
-        self.dad = dad
+    init(name: String, description: String, dad: Node? = nil) {
+        self.description = description
+        super.init(name: name, dad: dad)
     }
-    
-    func showClue() {
-        print(name)
+
+    func showClue(){
+        print("Pista encontrada \(description).")
     }
 }

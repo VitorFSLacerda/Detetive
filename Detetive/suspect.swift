@@ -1,27 +1,17 @@
 import Foundation
 
-class Suspect {
-    let name: String
-    var endStory: String = ""
-    var alibi: String = ""
-    weak var dad: OptionNode?
-    
+class Suspect: Node {
+    let endStory: String
+    let alibi: String
 
-    init(name: String, dad: OptionNode? = nil) {
-        self.name = name
-        self.dad = dad
-    }
-
-    func insertEndStory(_ endStory: String) {
+    init(name: String, alibi: String, endStory: String, dad: Node? = nil) {
+        self.alibi = alibi
         self.endStory = endStory
+        super.init(name: name, dad: dad)
     }
     
     func showEndStory(){
         print(endStory)
-    }
-    
-    func insertAlibi(_ alibi: String){
-        self.alibi = alibi
     }
     
     func showAlibi(){
