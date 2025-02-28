@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF50A582D7218D8002C8226 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF50A572D7218D8002C8226 /* utils.swift */; };
+		2AF50A5A2D721C86002C8226 /* beginingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF50A592D721C86002C8226 /* beginingText.swift */; };
 		E50104602D6E02B90046320C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501045F2D6E02B90046320C /* main.swift */; };
 		E54010462D6FA3C700B1CDDD /* suspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54010452D6FA3C700B1CDDD /* suspect.swift */; };
 		E59FBC982D70947600184727 /* anotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC972D70947600184727 /* anotation.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AF50A572D7218D8002C8226 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		2AF50A592D721C86002C8226 /* beginingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beginingText.swift; sourceTree = "<group>"; };
 		E501045C2D6E02B90046320C /* Detetive */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Detetive; sourceTree = BUILT_PRODUCTS_DIR; };
 		E501045F2D6E02B90046320C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E54010452D6FA3C700B1CDDD /* suspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspect.swift; sourceTree = "<group>"; };
@@ -67,12 +71,14 @@
 		E501045E2D6E02B90046320C /* Detetive */ = {
 			isa = PBXGroup;
 			children = (
+				2AF50A592D721C86002C8226 /* beginingText.swift */,
 				E501045F2D6E02B90046320C /* main.swift */,
 				E5F7DBD62D71CE6D00913925 /* node.swift */,
 				E59FBC9D2D70B1A300184727 /* clue.swift */,
 				E54010452D6FA3C700B1CDDD /* suspect.swift */,
 				E59FBC972D70947600184727 /* anotation.swift */,
 				E59FBC9F2D70B3B200184727 /* creationTree.swift */,
+				2AF50A572D7218D8002C8226 /* utils.swift */,
 			);
 			path = Detetive;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				E59FBCA02D70B3B200184727 /* creationTree.swift in Sources */,
 				E59FBC982D70947600184727 /* anotation.swift in Sources */,
 				E54010462D6FA3C700B1CDDD /* suspect.swift in Sources */,
+				2AF50A5A2D721C86002C8226 /* beginingText.swift in Sources */,
+				2AF50A582D7218D8002C8226 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTW4374WZ8;
+				DEVELOPMENT_TEAM = V5KTYJR2FJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -277,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTW4374WZ8;
+				DEVELOPMENT_TEAM = V5KTYJR2FJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
