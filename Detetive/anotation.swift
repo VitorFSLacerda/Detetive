@@ -1,5 +1,10 @@
-class Anotation {
+class Anotation:  Node {
     var notes: [String] = []
+    
+    init(_ name: String) {
+        super.init(name: name)
+    }
+    
 
     func add(_ note: String) {
         if !notes.contains(note) {

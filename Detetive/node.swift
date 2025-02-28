@@ -23,6 +23,10 @@ class Node {
         for(index, son) in sons.enumerated(){
             print("\(index + 1). \(son.name) ")
         }
-        print("0. Voltar")
+        if  name == "Menu"{
+            print("0. Sair")
+        } else{
+            print("0. Voltar")
+        }
     }
 }
