@@ -1,5 +1,7 @@
 import Foundation
 
-while true {
+//for cact in text {
+//    print(cact, terminator: "")
+//    usleep(500000)
+//}
 
-}

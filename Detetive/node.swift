@@ -5,18 +5,16 @@ class Node {
     weak var dad: Node?
     var sons: [Node] = []
 
-    init(name: String, dad: Node? = nil) {
+    init(name: String) {
         self.name = name
-        self.dad = dad
     }
     
     func addSon(_ son: Node) {
         sons.append(son)
-        self.dad = self
-    }
+        son.dad = self     }
     
     
-    func listOptions() {
+    func choices() {
         if sons.isEmpty{
             print("\nNenhuma opção disponível.")
             return

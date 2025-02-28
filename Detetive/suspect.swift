@@ -4,10 +4,10 @@ class Suspect: Node {
     let endStory: String
     let alibi: String
 
-    init(name: String, alibi: String, endStory: String, dad: Node? = nil) {
+    init(_ name: String, _ alibi: String, _ endStory: String) {
         self.alibi = alibi
         self.endStory = endStory
-        super.init(name: name, dad: dad)
+        super.init(name: name)
     }
     
     func showEndStory(){
