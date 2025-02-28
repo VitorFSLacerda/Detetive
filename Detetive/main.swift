@@ -1,9 +1,11 @@
 import Foundation
 
 print(title)
-print("------------Press 1 to START game or 0 to QUIT------------\n")
-var answer = readLine()
 
+// efeito piscando
+blinkEffect(text: "---------------Press 1 to START game or 0 to QUIT---------------", n: 3)
+
+var answer = readLine()
 clearTerminal()
 
 if answer == "1" {
