@@ -83,7 +83,8 @@ class CreationTree {
              "André aceita os salgadinhos e, poucos segundos depois, começa a passar mal. Enzo não sabe o que está acontecendo, mas percebe que algo está errado quando André fica com o rosto inchado e começa a ter dificuldades para respirar...",
              "André, desesperado, tenta encontrar seu remédio na mochila. Ele era alérgico a amendoim. Mas, não acha e desmaia. Enzo fica apavorado. Ele pensa que André está morto e, em um momento de pânico, age de maneira impulsiva...",
              "Em vez de chamar ajuda, ele arrasta o corpo de André até a piscina e o joga lá, na esperança de que, ao encontrarem o corpo, a causa da morte seja confundida com um afogamento...",
-             "Agora, atrás das grades, Enzo lembra de cada detalhe. Poderia ter evitado tudo, mas faz a pior escolha possível...", "E o pior de tudo? Mesmo contando sua versão, ninguém acredita que foi apenas um erro terrível. Todos estão convencidos de que Enzo era apaixonado por Clara e queria tirar André do caminho..."],
+             "Agora, atrás das grades, Enzo lembra de cada detalhe. Poderia ter evitado tudo, mas faz a pior escolha possível. Se tivesse chamado ajuda, André provavelmente ainda estaria vivo...",
+             "E o pior de tudo? Mesmo contando sua versão, ninguém acredita que foi apenas um erro terrível. Todos estão convencidos de que Enzo era apaixonado por Clara e queria tirar André do caminho..."],
             "Nunca foi próximo de André, mas tentava se aproximar dele para agradar Clara. Sua proximidade com Clara poderia indicar um motivo oculto para prejudicar André? Além disso, se Clara dormia — ninguém viu se ele realmente foi para o quarto.", "Estudante de engenharia civil. Brincalhão, sarcástico e próximo de Clara.")
 
         roomTwo.addSon(firstClueRoomTwo)
