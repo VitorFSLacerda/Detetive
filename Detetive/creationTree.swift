@@ -41,8 +41,8 @@ class CreationTree {
         livingRoom.addSon(secondClueRoom)
         livingRoom.addSon(julieta)
 
-        let firstClueChicken = Clue("Investigar lixo.", "Pacote de salgadinho.")
-        let secondClueChicken = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
+        let firstClueKitchen = Clue("Investigar lixo.", "Pacote de salgadinho.")
+        let secondClueKitchen = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
         let alex = Suspect(
             "Conversar com Alex",
             "Fiquei limpando a bagunça da festa perto da piscina. Depois, passei rapidamente pela sala e vi André sentado antes de ir para o quarto.",
@@ -151,28 +151,21 @@ class CreationTree {
 
             if let suspect = current as? Suspect {
                 if aux?.name == "Suspeitos" {
-                    suspect.showEndStory()
-                    print("Fim de jogo.")
-                    return
-                } else {
-                    suspect.showAlibi()
-                    notes.add("Sobre \(suspect.name).  \(suspect.insight)")
-                    
-                    if (suspect.name == "Enzo") {
-                        for (index, _) in suspect.endStory.enumerated() {
-                            suspect.showEndStory(n: index)
-                            //print(text)
-                            pressEnterText(n: 2)
+                    for (index, _) in suspect.endStory.enumerated() {
+                        suspect.showEndStory(n: index)
+                        
+                        if index < suspect.endStory.count - 1 {
+                            pressEnterTo(text: "Press enter to continue", n: 2)
                         }
-                        return
                     }
-                    else {
-                        suspect.showEndStory(n: 0)
-                    }
-            } else {
+                    pressEnterTo(text: "Press enter to END", n: 2)
+                    clearTerminal()
+                    return
+                }
                 suspect.showAlibi()
+                notes.add("Sobre \(suspect.name). \(suspect.insight)")
             }
-            }
+
         }
     }
 }

@@ -11,7 +11,7 @@ clearTerminal()
 if answer == "1" {
     // typewriter(intro)
     print("\n")
-    pressEnterText(n: 3)
+    pressEnterTo(text: "Press enter to continue", n: 2)
     let game = CreationTree()
     game.runGame()
 }
