@@ -176,21 +176,13 @@ class CreationTree {
                     } else {
                         print("Escolha inválida. O jogo terminará.")
                         return
-                    for (index, _) in suspect.endStory.enumerated() {
-                        suspect.showEndStory(n: index)
-                        
-                        if index < suspect.endStory.count - 1 {
-                            pressEnterTo(text: "Press enter to continue", n: 2)
-                        }
                     }
-                    pressEnterTo(text: "Press enter to END", n: 2)
-                    clearTerminal()
-                    return
-                }
+                
+                } else {
                 suspect.showAlibi()
                 notes.add("Sobre \(suspect.name). \(suspect.insight)")
+                }
             }
-
         }
     }
 }

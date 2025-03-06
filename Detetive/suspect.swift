@@ -15,8 +15,13 @@ class Suspect: Node {
         super.init(name: name)
     }
     
-    func showEndStory(n: Int){
-        print(endStory[n])
+    func showEndStory(){
+        for (index, _) in self.endStory.enumerated() {
+            print(endStory[index])
+            if index < self.endStory.count - 1 {
+                pressEnterTo(text: "Press enter to continue", n: 2)
+            }
+        }
     }
     
     func showAlibi(){
