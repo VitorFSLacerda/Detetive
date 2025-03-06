@@ -220,6 +220,7 @@ class CreationTree {
                     pressEnterTo(text: "Press enter to continue", n: 2)
                     suspect.showAlibi()
                     notes.add("Sobre \(suspect.name). \(suspect.insight)")
+                    pressEnterTo(text: "Press enter to continue", n: 2)
                 }
             }
         }
