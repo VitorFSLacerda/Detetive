@@ -50,8 +50,8 @@ class CreationTree {
             "Sua pulseira foi encontrada na piscina. Se ele foi o último visto por lá, poderia ter presenciado algo ou mesmo estar escondendo alguma informação? Poderia estar encobrindo alguém para evitar problemas na sua propriedade?", "Dono da chácara, anfitrião da festa. Estudante de direito. Responsável, gosta de manter a ordem e evitar confusão."
         )
 
-        kitchen.addSon(firstClueChicken)
-        kitchen.addSon(secondClueChicken)
+        kitchen.addSon(firstClueKitchen)
+        kitchen.addSon(secondClueKitchen)
         kitchen.addSon(alex)
         
         let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja de salgadinho jogada.")
@@ -146,11 +146,17 @@ class CreationTree {
             
             if let clue = current as? Clue {
                 clue.showClue()
-                notes.add(clue.description)
+                notes.add("Local da pista [\(aux?.name ?? "Local desconhecido")] - \(clue.description)")
             }
-            
+
             if let suspect = current as? Suspect {
                 if aux?.name == "Suspeitos" {
+                    suspect.showEndStory()
+                    print("Fim de jogo.")
+                    return
+                } else {
+                    suspect.showAlibi()
+                    notes.add("Sobre \(suspect.name).  \(suspect.insight)")
                     
                     if (suspect.name == "Enzo") {
                         for (index, _) in suspect.endStory.enumerated() {
