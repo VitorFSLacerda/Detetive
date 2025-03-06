@@ -27,4 +27,8 @@ class Suspect: Node {
     func showAlibi(){
         print(alibi)
     }
+    
+    override func choices() {
+        print("0. Voltar")
+    }
 }

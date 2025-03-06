@@ -114,7 +114,7 @@ class CreationTree {
         var aux: Node?
         
         while true{
-            print("O que deseja fazer? Digite o número da escolha:\n\n")
+            print("\nO que deseja fazer? Digite o número da escolha:\n\n")
             current.choices()
             answer = readLine()
             
@@ -134,8 +134,16 @@ class CreationTree {
                 
             }  else if answer == "3"{
                 current = current.sons[2]
-            }
+                
+            }  else if answer == "4" && aux?.name == "Suspeitos" {
+                current = current.sons[3]
+                
+            } else if answer == "5" && aux?.name == "Suspeitos" {
+               current = current.sons[4]
+           }
             
+            clearTerminal()
+
             print("Você está em: \(current.name)\n")
             
             if current.name == "Anotações" {
@@ -151,39 +159,43 @@ class CreationTree {
             if let suspect = current as? Suspect {
                 if aux?.name == "Suspeitos" {
                     suspect.showEndStory()
-                    print("\nVocê escolheu o suspeito errado. O que deseja fazer?")
-                    print("1. Recomeçar o jogo sem saber quem é o assassino.")
-                    print("2. Descobrir quem era o assassino.")
-                    print("0. Sair do jogo.")
+                    if suspect.name != "Enzo"{
+                        print("\nVocê escolheu o suspeito errado. O que deseja fazer?")
+                        print("1. Recomeçar o jogo sem saber quem é o assassino.")
+                        print("2. Descobrir quem era o assassino.")
+                        print("0. Sair do jogo.")
 
-                    let choice = readLine()
+                        let choice = readLine()
 
-                    if choice == "1" {
-                        print("Reiniciando o jogo...\n")
-                        let newGame = CreationTree()
-                        newGame.runGame()
-                        return
-                    } else if choice == "2" {
-                        print("O assassino era Enzo!\n")
-                        
-                        if aux != nil {
-                            for son in aux?.sons ?? [] {
-                                if let suspect = son as? Suspect, son.name == "Enzo" {
-                                    suspect.showEndStory()
+                        if choice == "1" {
+                            print("Reiniciando o jogo...\n")
+                            let newGame = CreationTree()
+                            newGame.runGame()
+                            return
+                        } else if choice == "2" {
+                            print("O assassino era Enzo!\n")
+                            
+                            if aux != nil {
+                                for son in aux?.sons ?? [] {
+                                    if let suspect = son as? Suspect, son.name == "Enzo" {
+                                        suspect.showEndStory()
+                                    }
                                 }
                             }
-                        }
 
-                        print("Fim de jogo.")
-                        return
-                    } else if choice == "0" {
-                        print("Saindo do jogo.")
-                        return
-                    } else {
-                        print("Escolha inválida. O jogo terminará.")
-                        return
+                            print("Fim de jogo.")
+                            return
+                        } else if choice == "0" {
+                            print("Saindo do jogo.")
+                            return
+                        } else {
+                            print("Escolha inválida. O jogo terminará.")
+                            return
+                        }
                     }
-                
+                    print("Fim de jogo.")
+                    return
+                    
                 } else {
                 suspect.showAlibi()
                 notes.add("Sobre \(suspect.name). \(suspect.insight)")

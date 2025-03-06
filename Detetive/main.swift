@@ -13,6 +13,8 @@ if answer == "1" {
     print("\n")
     pressEnterTo(text: "Press enter to continue", n: 2)
     let game = CreationTree()
+    clearTerminal()
+
     game.runGame()
 }
 else if answer == "0" {
