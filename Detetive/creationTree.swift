@@ -135,12 +135,15 @@ class CreationTree {
             }  else if answer == "3"{
                 current = current.sons[2]
                 
-            }  else if answer == "4" && aux?.name == "Suspeitos" {
+            }  else if answer == "4" {
                 current = current.sons[3]
                 
-            } else if answer == "5" && aux?.name == "Suspeitos" {
-               current = current.sons[4]
-           }
+            } else if answer == "5" {
+                current = current.sons[4]
+                
+            } else if answer == "6" {
+                current = current.sons[5]
+            }
             
             clearTerminal()
 
