@@ -173,6 +173,7 @@ class CreationTree {
                 notes.add("Local da pista [\(aux?.name ?? "Local desconhecido")] - \(clue.description)")
                 pressEnterTo(text: "Press enter to continue", n: 2)
                 clearTerminal()
+                current = aux ?? current
             }
             
             if aux?.name == "Cômodos" {
@@ -235,6 +236,7 @@ class CreationTree {
                     notes.add("Sobre \(suspect.name). \(suspect.insight)")
                     pressEnterTo(text: "Pressione enter para continuar...", n: 2)
                     clearTerminal()
+                    current = aux ?? current
                 }
             }
         }
