@@ -93,7 +93,6 @@ class CreationTree {
         var aux: Node?
         
         while true{
-            clearTerminal()
             print("O que deseja fazer? Digite o número da escolha:\n\n")
             current.choices()
             answer = readLine()
@@ -145,8 +144,15 @@ class CreationTree {
                         return
                     } else if choice == "2" {
                         print("O assassino era Enzo!\n")
+                        
+                        if aux != nil {
+                            for son in aux?.sons ?? [] {
+                                if let suspect = son as? Suspect, son.name == "Enzo" {
+                                    suspect.showEndStory()
+                                }
+                            }
+                        }
 
-                        suspect.showEndStory()
                         print("Fim de jogo.")
                         return
                     } else if choice == "0" {
