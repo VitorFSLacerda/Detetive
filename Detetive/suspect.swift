@@ -23,8 +23,8 @@ class Suspect: Node {
         }
     }
     
-    func showAlibi(){
-        typewriter("'\(alibi)'")
+    func showAlibi() -> String{
+        return alibi
     }
     
     func showInformation(){

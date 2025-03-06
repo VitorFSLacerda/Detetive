@@ -231,7 +231,7 @@ class CreationTree {
                     suspect.showInformation()
                     pressEnterTo(text: "Press enter to continue", n: 2)
                     clearTerminal()
-                    print("\(suspect.name): \(suspect.showAlibi())")
+                    typewriter("\(suspect.name): '\(suspect.showAlibi())'")
                     notes.add("Sobre \(suspect.name). \(suspect.insight)")
                     pressEnterTo(text: "Press enter to continue", n: 2)
                     clearTerminal()
