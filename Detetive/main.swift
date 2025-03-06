@@ -8,7 +8,6 @@ print(title)
 
 // efeito piscando
 blinkEffect(text: "--------------- Pressione 1 para COMEÇAR o jogo ou 0 para SAIR ---------------", n: 3)
-print("\n")
 
 var answer = readLine()
 clearTerminal()
