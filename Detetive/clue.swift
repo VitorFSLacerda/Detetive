@@ -11,4 +11,8 @@ class Clue: Node {
     func showClue(){
         print("Pista encontrada: \(description).")
     }
+    
+    override func choices() {
+        print("0. Voltar")
+    }
 }
