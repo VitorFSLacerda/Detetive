@@ -6,6 +6,7 @@ print(title)
 
 // efeito piscando
 blinkEffect(text: "---------------Press 1 to START game or 0 to QUIT---------------", n: 3)
+print("\n")
 
 var answer = readLine()
 clearTerminal()
