@@ -17,7 +17,6 @@ func typewriter(_ text: String) {
         fflush(stdout)
         usleep(100000)
     }
-    print("")
 }
 
 func blinkEffect(text: String, n: Int) {
@@ -38,6 +37,7 @@ func blinkEffect(text: String, n: Int) {
 }
 
 func pressEnterTo(text: String, n: Int) {
+    print("\n")
     blinkEffect(text: text, n: n)
     var _ = readLine()
 }

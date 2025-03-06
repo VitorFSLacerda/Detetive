@@ -10,7 +10,6 @@ class Anotation:  Node {
         if !notes.contains(note) {
             notes.append(note)
             print("\nAnotação adicionada! Verifique suas anotações!")
-            print("\n")
         }
     }
 
