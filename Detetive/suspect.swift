@@ -28,6 +28,6 @@ class Suspect: Node {
     }
     
     func showInformation(){
-        print("\(information)\n")
+        print("\(information)")
     }
 }

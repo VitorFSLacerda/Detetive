@@ -9,7 +9,8 @@ class Anotation:  Node {
     func add(_ note: String) {
         if !notes.contains(note) {
             notes.append(note)
-            print("\nAnotação adicionada! Verifique suas anotações!")
+            print("\n")
+            print("Anotação adicionada! Verifique suas anotações!")
         }
     }
 
