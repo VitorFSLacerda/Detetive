@@ -30,8 +30,4 @@ class Suspect: Node {
     func showInformation(){
         print("\(information)\n")
     }
-    
-    override func choices() {
-        print("0. Voltar")
-    }
 }
