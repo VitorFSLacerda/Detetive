@@ -13,10 +13,10 @@ class Node {
     
     func addSon(_ son: Node) {
         sons.append(son)
-        if son.dad != nil{
-            son.dadTwo = self
-        } else{
+        if son.dad == nil {
             son.dad = self
+        } else if son.dadTwo == nil {
+            son.dadTwo = self
         }
     }
     

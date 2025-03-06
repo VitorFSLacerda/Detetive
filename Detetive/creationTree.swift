@@ -90,11 +90,15 @@ class CreationTree {
         
         var answer: String?
         print("Você está em: \(current.name)\n")
+        var aux: Node?
+        
         while true{
             clearTerminal()
             print("O que deseja fazer? Digite o número da escolha:\n\n")
             current.choices()
             answer = readLine()
+            
+            aux = current
             
             if answer == "0" {
                 if current.name == "Menu" {
@@ -125,7 +129,10 @@ class CreationTree {
             }
             
             if let suspect = current as? Suspect {
-                if suspect.dadTwo?.name == "Suspeitos" {
+                print("entrou aqui")
+                
+                
+                if aux?.name == "Suspeitos" {
                     suspect.showEndStory()
                     print("Fim de jogo.")
                     return
