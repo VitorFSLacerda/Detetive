@@ -3,6 +3,8 @@ import Foundation
 class Node {
     let name: String
     weak var dad: Node?
+    weak var dadTwo: Node?
+
     var sons: [Node] = []
 
     init(name: String) {
@@ -11,7 +13,12 @@ class Node {
     
     func addSon(_ son: Node) {
         sons.append(son)
-        son.dad = self     }
+        if son.dad != nil{
+            son.dadTwo = self
+        } else{
+            son.dad = self
+        }
+    }
     
     
     func choices() {

@@ -9,7 +9,7 @@ var answer = readLine()
 clearTerminal()
 
 if answer == "1" {
-    typewriter(intro)
+   // typewriter(intro)
     print("Press enter to continue.")
     _ = readLine()
     let game = CreationTree()
