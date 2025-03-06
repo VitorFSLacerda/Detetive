@@ -129,9 +129,6 @@ class CreationTree {
             }
             
             if let suspect = current as? Suspect {
-                print("entrou aqui")
-                
-                
                 if aux?.name == "Suspeitos" {
                     suspect.showEndStory()
                     print("Fim de jogo.")
