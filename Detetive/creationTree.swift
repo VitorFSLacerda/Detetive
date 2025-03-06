@@ -63,7 +63,7 @@ class CreationTree {
         let clara = Suspect(
             "Clara",
             "Eu estava me sentindo mal, então fui para o quarto e dormi cedo. Só soube do que aconteceu de manhã, quando me levantei e vi o corpo de André na piscina. Fiquei desesperada e gritei para chamar ajuda.",
-            ["Você escolhe Clara. Como estudante de enfermagem e ciente da alergia de André, tornou-se a maior suspeita...",
+            ["Você escolhe Clara. Como estudante de enfermagem e ciente da alergia de André, Clara tornou-se a maior suspeita...",
              "Ela é condenada a 10 anos de prisão. Apesar de estar afastada de André, jamais desejaria seu mal. Depois de cinco anos na cadeia, novas provas surgem e Clara é inocentada...",
              "Sua vida, no entanto, nunca mais é a mesma. Consumida pela culpa por não estar acordada para oferecer o antialérgico, Clara abandona a enfermagem e se muda para outra cidade, tentando esquecer o passado."],
             "Ninguém confirma que ela realmente dormiu a noite toda.", "Namorada de André. Estudante de enfermagem. Cuidadosa e empática, mas ultimamente estava distante de André.")
@@ -177,7 +177,7 @@ class CreationTree {
                 if aux?.name == "Escolher assassino" {
                     suspect.showEndStory()
                     if suspect.name != "Enzo"{
-                        print("\nVocê escolheu o suspeito errado. O que deseja fazer?")
+                        print("Você escolheu o suspeito errado. O que deseja fazer?")
                         print("1. Recomeçar o jogo sem saber quem é o assassino.")
                         print("2. Descobrir quem era o assassino.")
                         print("0. Sair do jogo.")
@@ -205,7 +205,8 @@ class CreationTree {
                             print("Fim de jogo.")
                             return
                         } else if choice == "0" {
-                            print("Saindo do jogo.")
+                            typewriter("Saindo do jogo...\n")
+                            clearTerminal()
                             return
                         } else {
                             print("Escolha inválida. O jogo terminará.")
