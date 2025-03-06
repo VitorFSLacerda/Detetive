@@ -15,7 +15,7 @@ class CreationTree {
         current.addSon(notes)
 
         let livingRoom = Node(name: "Sala")
-        let Kitchen = Node(name: "Cozinha")
+        let kitchen = Node(name: "Cozinha")
         let roomOne = Node(name: "Quarto 1")
         let roomTwo = Node(name: "Quarto 2")
         let toilet = Node(name: "Banheiro")
@@ -23,7 +23,7 @@ class CreationTree {
 
 
         room.addSon(livingRoom)
-        room.addSon(Kitchen)
+        room.addSon(kitchen)
         room.addSon(roomOne)
         room.addSon(roomTwo)
         room.addSon(toilet)
@@ -31,7 +31,7 @@ class CreationTree {
         
         let firstClueRoom = Clue("Investigar mesa.", "Farelhos de salgadinho na mesa.")
         let secondClueRoom = Clue("Investigar chão.", "Uma cadeira caída.")
-        let julieta = Suspect("aaaaa", "alibi", "endgame", "eee")
+        let julieta = Suspect("Conversar com Julieta", "Fui ler um livro na sala, onde o andre também estava, mas acabei adormecendo no sofá.", "endStory", "eee")
 
         livingRoom.addSon(firstClueRoom)
         livingRoom.addSon(secondClueRoom)
@@ -39,15 +39,15 @@ class CreationTree {
 
         let firstClueChicken = Clue("Investigar lixo.", "Pacote de salgadinho.")
         let secondClueChicken = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
-        let alex = Suspect("", "", "", "")
+        let alex = Suspect("Conversar com Alex", "Fiquei limpando a bagunça na piscina antes de dormir. Só vi o André sentado na sala.", "endStory", "")
 
-        Kitchen.addSon(firstClueChicken)
-        Kitchen.addSon(secondClueChicken)
-        Kitchen.addSon(alex)
+        kitchen.addSon(firstClueChicken)
+        kitchen.addSon(secondClueChicken)
+        kitchen.addSon(alex)
         
         let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja de salgadinho jogada.")
         let secondClueRoomOne = Clue("Investigar escrivaninha", "Remédio para dormir.")
-        let clara = Suspect("", "", "", "")
+        let clara = Suspect("Conversar com Clara", "Eu estava me sentindo mal, fui dormir cedo. Só soube do que aconteceu de manhã.", "endStory", "")
 
         roomOne.addSon(firstClueRoomOne)
         roomOne.addSon(secondClueRoomOne)
@@ -56,7 +56,7 @@ class CreationTree {
         
         let firstClueRoomTwo = Clue("Investigar escrivaninha.", "Remédio antialérgico.")
         let secondClueRoomTwo = Clue("Investigar camas.", "Duas camas bagunçadas e uma totalmente arrumada.")
-        let enzo = Suspect("", "", "", "")
+        let enzo = Suspect("Conversar com Enzo", "Fiquei na cozinha com Julieta e Alex até tarde. Depois fui pro meu quarto.", "endStory", "")
 
         roomTwo.addSon(firstClueRoomTwo)
         roomTwo.addSon(secondClueRoomTwo)
@@ -65,7 +65,7 @@ class CreationTree {
 
         let firstClueToilet = Clue("Investigar chão.", "Toalha molhada no chão.")
         let secondClueToilet = Clue("Investigar box.", "Chuveiro queimado.")
-        let samuel = Suspect("", "", "", "")
+        let samuel = Suspect("Conversar com Samuel", "Estava no banho e ouvi um barulho na piscina. Minutos depois, quando terminei o banho, fui dormir.", "", "")
 
         toilet.addSon(firstClueToilet)
         toilet.addSon(secondClueToilet)
