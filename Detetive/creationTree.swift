@@ -172,7 +172,16 @@ class CreationTree {
                 clue.showClue()
                 notes.add("Local da pista [\(aux?.name ?? "Local desconhecido")] - \(clue.description)")
             }
-
+            
+            if aux?.name == "Cômodos" {
+                if current.name == "Quarto 1" { // alex, julieta, samuel
+                    notes.add("Local da pista [\(current.name)] - Local onde Alex, Samuel e Julieta estavam hospedados.")
+                    
+                } else if current.name == "Quarto 2" { //enzo , andre e clara
+                    notes.add("Local da pista [\(current.name)] - Local onde Enzo, André e Clara estavam hospedados.")
+                }
+            }
+            
             if let suspect = current as? Suspect {
                 if aux?.name == "Escolher assassino" {
                     suspect.showEndStory()
