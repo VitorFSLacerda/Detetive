@@ -1,6 +1,8 @@
 import Foundation
 
 clearTerminal()
+clearTerminal()
+
 
 print(title)
 
