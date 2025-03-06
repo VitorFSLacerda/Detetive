@@ -37,12 +37,12 @@ class CreationTree {
         livingRoom.addSon(secondClueRoom)
         livingRoom.addSon(julieta)
 
-        let firstClueChicken = Clue("Investigar lixo.", "Pacote de salgadinho.")
-        let secondClueChicken = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
+        let firstClueKitchen = Clue("Investigar lixo.", "Pacote de salgadinho.")
+        let secondClueKitchen = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
         let alex = Suspect("Conversar com Alex", "Fiquei limpando a bagunça da festa perto da piscina. Depois, passei rapidamente pela sala e vi André sentado antes de ir para o quarto.", "Você escolhe Alex. Como anfitrião da festa e o último visto na cena do crime, todas as suspeitas recaem sobre ele. Ele é condenado a 15 anos de prisão. No início, se mantém firme, alegando inocência, mas a injustiça o consome. Cinco anos depois, novas investigações provam que ele não é o verdadeiro assassino e que realmente só estava organizando o local. Sua reputação está arruinada e, diferente da pessoa calma que era antes, agora vive na defensiva e nunca mais confia em ninguém.", "Sua pulseira foi encontrada na piscina. Se ele foi o último visto por lá, poderia ter presenciado algo ou mesmo estar escondendo alguma informação? Poderia estar encobrindo alguém para evitar problemas na sua propriedade?", "Dono da chácara, anfitrião da festa. Estudante de direito. Responsável, gosta de manter a ordem e evitar confusão.")
 
-        kitchen.addSon(firstClueChicken)
-        kitchen.addSon(secondClueChicken)
+        kitchen.addSon(firstClueKitchen)
+        kitchen.addSon(secondClueKitchen)
         kitchen.addSon(alex)
         
         let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja de salgadinho jogada.")
