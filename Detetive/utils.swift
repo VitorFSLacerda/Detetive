@@ -35,3 +35,8 @@ func blinkEffect(text: String, n: Int) {
     }
     print("\n")
 }
+
+func pressEnterText(n: Int) {
+    blinkEffect(text: "Press enter to continue", n: n)
+    _ = readLine()
+}
