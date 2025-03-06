@@ -31,7 +31,7 @@ class CreationTree {
         
         let firstClueRoom = Clue("Investigar mesa.", "Farelhos de salgadinho na mesa.")
         let secondClueRoom = Clue("Investigar chão.", "Uma cadeira caída.")
-        let julieta = Suspect("", "", "", "")
+        let julieta = Suspect("aaaaa", "alibi", "endgame", "eee")
 
         livingRoom.addSon(firstClueRoom)
         livingRoom.addSon(secondClueRoom)
@@ -67,15 +67,15 @@ class CreationTree {
         let secondClueToilet = Clue("Investigar box.", "Chuveiro queimado.")
         let samuel = Suspect("", "", "", "")
 
-        roomTwo.addSon(firstClueToilet)
-        roomTwo.addSon(secondClueToilet)
-        roomTwo.addSon(samuel)
+        toilet.addSon(firstClueToilet)
+        toilet.addSon(secondClueToilet)
+        toilet.addSon(samuel)
         
         let firstCluePoolArea = Clue("Investigar corpo.", "Corpo de André, sem sinais de luta ou lesões físicas e garganta inchada com vermelhidão.")
         let secondCluePoolArea = Clue("Investigar piscina", "Pulseira caída perto da piscina.")
 
-        roomTwo.addSon(firstCluePoolArea)
-        roomTwo.addSon(secondCluePoolArea)
+        poolArea.addSon(firstCluePoolArea)
+        poolArea.addSon(secondCluePoolArea)
         
         
         suspect.addSon(julieta)
@@ -90,11 +90,15 @@ class CreationTree {
         
         var answer: String?
         print("Você está em: \(current.name)\n")
+        var aux: Node?
+        
         while true{
-            //clearTerminal()
+            clearTerminal()
             print("O que deseja fazer? Digite o número da escolha:\n\n")
             current.choices()
             answer = readLine()
+            
+            aux = current
             
             if answer == "0" {
                 if current.name == "Menu" {
@@ -124,14 +128,18 @@ class CreationTree {
                 notes.add(clue.description)
             }
             
-
-
-            if let suspect = current as? Suspect, current.dad?.name == "Suspeitos" {
-                suspect.showEndStory()
-                print("Fim de jogo.")
-                return
+            if let suspect = current as? Suspect {
+                print("entrou aqui")
+                
+                
+                if aux?.name == "Suspeitos" {
+                    suspect.showEndStory()
+                    print("Fim de jogo.")
+                    return
+                } else {
+                    suspect.showAlibi()
+                }
             }
-            
         }
     }
     
