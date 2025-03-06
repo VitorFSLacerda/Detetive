@@ -33,7 +33,6 @@ func blinkEffect(text: String, n: Int) {
 
         count -= 1
     }
-    print("\n")
 }
 
 func pressEnterTo(text: String, n: Int) {
