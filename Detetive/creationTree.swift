@@ -166,7 +166,9 @@ class CreationTree {
             
             if current.name == "Anotações" {
                 notes.show()
-                
+                pressEnterTo(text: "Pressione enter para continuar...", n: 2)
+                clearTerminal()
+                current = aux ?? current
             }
             
             if let clue = current as? Clue {
