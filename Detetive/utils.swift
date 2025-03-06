@@ -33,4 +33,10 @@ func blinkEffect(text: String, n: Int) {
 
         count -= 1
     }
+    print("\n")
+}
+
+func pressEnterTo(text: String, n: Int) {
+    blinkEffect(text: text, n: n)
+    var _ = readLine()
 }

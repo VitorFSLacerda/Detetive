@@ -9,9 +9,9 @@ var answer = readLine()
 clearTerminal()
 
 if answer == "1" {
-   // typewriter(intro)
-    print("Press enter to continue.")
-    _ = readLine()
+    // typewriter(intro)
+    print("\n")
+    pressEnterTo(text: "Press enter to continue", n: 2)
     let game = CreationTree()
     game.runGame()
 }
