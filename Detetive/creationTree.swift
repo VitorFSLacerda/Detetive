@@ -8,7 +8,7 @@ class CreationTree {
         current = root
         
         let room = Node(name: "Cômodos")
-        let suspect = Node(name: "Suspeitos")
+        let suspect = Node(name: "Escolher assassino")
 
         current.addSon(room)
         current.addSon(suspect)
@@ -160,7 +160,7 @@ class CreationTree {
             }
 
             if let suspect = current as? Suspect {
-                if aux?.name == "Suspeitos" {
+                if aux?.name == "Escolher assassino" {
                     suspect.showEndStory()
                     if suspect.name != "Enzo"{
                         print("\nVocê escolheu o suspeito errado. O que deseja fazer?")
@@ -200,8 +200,10 @@ class CreationTree {
                     return
                     
                 } else {
-                suspect.showAlibi()
-                notes.add("Sobre \(suspect.name). \(suspect.insight)")
+                    suspect.showInformation()
+                    pressEnterTo(text: "Press enter to continue", n: 2)
+                    suspect.showAlibi()
+                    notes.add("Sobre \(suspect.name). \(suspect.insight)")
                 }
             }
         }

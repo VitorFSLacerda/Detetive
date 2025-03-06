@@ -25,7 +25,11 @@ class Suspect: Node {
     }
     
     func showAlibi(){
-        print(alibi)
+        print("'\(alibi)'")
+    }
+    
+    func showInformation(){
+        print("\(information)\n")
     }
     
     override func choices() {
