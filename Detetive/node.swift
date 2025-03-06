@@ -22,17 +22,16 @@ class Node {
     
     
     func choices() {
-        if  name == "Menu"{
-            print("0. Sair")
-        } else{
-            print("0. Voltar")
-        }
         if sons.isEmpty{
             return
         }
         for(index, son) in sons.enumerated(){
             print("\(index + 1). \(son.name) ")
         }
-
+        if  name == "Menu"{
+            print("0. Sair")
+        } else{
+            print("0. Voltar")
+        }
     }
 }
