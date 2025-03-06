@@ -229,11 +229,11 @@ class CreationTree {
                     
                 } else {
                     suspect.showInformation()
-                    pressEnterTo(text: "Press enter to continue", n: 2)
+                    pressEnterTo(text: "Pressione enter para continuar...", n: 2)
                     clearTerminal()
                     typewriter("\(suspect.name): '\(suspect.showAlibi())'")
                     notes.add("Sobre \(suspect.name). \(suspect.insight)")
-                    pressEnterTo(text: "Press enter to continue", n: 2)
+                    pressEnterTo(text: "Pressione enter para continuar...", n: 2)
                     clearTerminal()
                 }
             }
