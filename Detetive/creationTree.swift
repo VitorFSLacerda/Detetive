@@ -131,8 +131,34 @@ class CreationTree {
             if let suspect = current as? Suspect {
                 if aux?.name == "Suspeitos" {
                     suspect.showEndStory()
-                    print("Fim de jogo.")
-                    return
+                    print("\nVocê escolheu o suspeito errado. O que deseja fazer?")
+                    print("1. Recomeçar o jogo sem saber quem é o assassino.")
+                    print("2. Descobrir quem era o assassino.")
+                    print("0. Sair do jogo.")
+
+                    let choice = readLine()
+
+                    if choice == "1" {
+                        print("Reiniciando o jogo...\n")
+                        let newGame = CreationTree()
+                        newGame.runGame()
+                        return
+                    } else if choice == "2" {
+                        print("O assassino era Enzo!\n")
+
+                        suspect.showEndStory()
+                        print("Fim de jogo.")
+                        return
+                    } else if choice == "0" {
+                        print("Saindo do jogo.")
+                        return
+                    } else {
+                        print("Escolha inválida. O jogo terminará.")
+                        return
+                    }
+                    
+                    
+                    
                 } else {
                     suspect.showAlibi()
                     notes.add("Sobre \(suspect.name).  \(suspect.insight)")
