@@ -172,7 +172,7 @@ class CreationTree {
             if let clue = current as? Clue {
                 clue.showClue()
                 notes.add("Local da pista [\(aux?.name ?? "Local desconhecido")] - \(clue.description)")
-                pressEnterTo(text: "Press enter to continue", n: 2)
+                pressEnterTo(text: "Pressione enter para continuar...", n: 2)
                 clearTerminal()
                 current = aux ?? current
             }
