@@ -1,5 +1,7 @@
 import Foundation
 
+clearTerminal()
+
 print(title)
 
 // efeito piscando
