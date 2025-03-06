@@ -58,7 +58,7 @@ class CreationTree {
         kitchen.addSon(secondClueKitchen)
         kitchen.addSon(alex)
         
-        let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja de salgadinho jogada.")
+        let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja.")
         let secondClueRoomOne = Clue("Investigar escrivaninha", "Remédio para dormir.")
         let clara = Suspect(
             "Clara",
@@ -81,7 +81,7 @@ class CreationTree {
             ["Você escolhe Enzo. Ele imagina ter cometido o crime perfeito, mas suas falhas te levam à resposta certa...",
              "Durante a madrugada, o estudante pega um pacote de salgadinhos e oferece para André de forma inocente. Enzo apenas quer interagir com André e fazer parte do grupo, já que é grande amigo de Clara...",
              "André aceita os salgadinhos e, poucos segundos depois, começa a passar mal. Enzo não sabe o que está acontecendo, mas percebe que algo está errado quando André fica com o rosto inchado e começa a ter dificuldades para respirar...",
-             "André, desesperado, tenta encontrar seu remédio na mochila. Ele era alérgico a amendoim. Mas, não acha e desmaia. Enzo fica apavorado. Ele pensa que André está morto e, em um momento de pânico, age de maneira impulsiva...",
+             "André, desesperado, tenta encontrar seu remédio na mochila. Ele era alérgico a nozes. Mas, não acha e desmaia. Enzo fica apavorado. Ele pensa que André está morto e, em um momento de pânico, age de maneira impulsiva...",
              "Em vez de chamar ajuda, ele arrasta o corpo de André até a piscina e o joga lá, na esperança de que, ao encontrarem o corpo, a causa da morte seja confundida com um afogamento...",
              "Agora, atrás das grades, Enzo lembra de cada detalhe. Poderia ter evitado tudo, mas faz a pior escolha possível. Se tivesse chamado ajuda, André provavelmente ainda estaria vivo...",
              "E o pior de tudo? Mesmo contando sua versão, ninguém acredita que foi apenas um erro terrível. Todos estão convencidos de que Enzo era apaixonado por Clara e queria tirar André do caminho..."],
