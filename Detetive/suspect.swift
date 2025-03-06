@@ -20,14 +20,11 @@ class Suspect: Node {
             typewriter(endStory[index])
             pressEnterTo(text: "", n: 1)
             clearTerminal()
-            // if index < self.endStory.count - 1 {
-               // pressEnterTo(text: "Press enter to continue", n: 2)
-            //}
         }
     }
     
     func showAlibi(){
-        print("'\(alibi)'")
+        typewriter("'\(alibi)'")
     }
     
     func showInformation(){

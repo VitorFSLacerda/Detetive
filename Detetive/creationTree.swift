@@ -171,6 +171,8 @@ class CreationTree {
             if let clue = current as? Clue {
                 clue.showClue()
                 notes.add("Local da pista [\(aux?.name ?? "Local desconhecido")] - \(clue.description)")
+                pressEnterTo(text: "Press enter to continue", n: 2)
+                clearTerminal()
             }
             
             if aux?.name == "Cômodos" {
@@ -228,9 +230,11 @@ class CreationTree {
                 } else {
                     suspect.showInformation()
                     pressEnterTo(text: "Press enter to continue", n: 2)
-                    suspect.showAlibi()
+                    clearTerminal()
+                    print("\(suspect.name): \(suspect.showAlibi())")
                     notes.add("Sobre \(suspect.name). \(suspect.insight)")
                     pressEnterTo(text: "Press enter to continue", n: 2)
+                    clearTerminal()
                 }
             }
         }
