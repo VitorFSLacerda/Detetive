@@ -17,10 +17,12 @@ class Suspect: Node {
     
     func showEndStory(){
         for (index, _) in self.endStory.enumerated() {
-            print(endStory[index])
-            if index < self.endStory.count - 1 {
-                pressEnterTo(text: "Press enter to continue", n: 2)
-            }
+            typewriter(endStory[index])
+            pressEnterTo(text: "", n: 1)
+            clearTerminal()
+            // if index < self.endStory.count - 1 {
+               // pressEnterTo(text: "Press enter to continue", n: 2)
+            //}
         }
     }
     
