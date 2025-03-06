@@ -15,7 +15,7 @@ class Node {
         sons.append(son)
         if son.dad == nil {
             son.dad = self
-        } else if son.dadTwo == nil {
+        } else {
             son.dadTwo = self
         }
     }
