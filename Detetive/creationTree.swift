@@ -183,9 +183,11 @@ class CreationTree {
                         print("0. Sair do jogo.")
 
                         let choice = readLine()
+                        clearTerminal()
 
                         if choice == "1" {
-                            print("Reiniciando o jogo...\n")
+                            typewriter("Reiniciando o jogo...\n")
+                            clearTerminal()
                             let newGame = CreationTree()
                             newGame.runGame()
                             return
