@@ -15,7 +15,7 @@ class CreationTree {
         current.addSon(notes)
 
         let livingRoom = Node(name: "Sala")
-        let chicken = Node(name: "Cozinha")
+        let Kitchen = Node(name: "Cozinha")
         let roomOne = Node(name: "Quarto 1")
         let roomTwo = Node(name: "Quarto 2")
         let toilet = Node(name: "Banheiro")
@@ -23,7 +23,7 @@ class CreationTree {
 
 
         room.addSon(livingRoom)
-        room.addSon(chicken)
+        room.addSon(Kitchen)
         room.addSon(roomOne)
         room.addSon(roomTwo)
         room.addSon(toilet)
@@ -41,9 +41,9 @@ class CreationTree {
         let secondClueChicken = Clue("Investigar geladeira.", "Lista de compras com uma observação de comidas sem nozes.")
         let alex = Suspect("", "", "", "")
 
-        chicken.addSon(firstClueChicken)
-        chicken.addSon(secondClueChicken)
-        chicken.addSon(alex)
+        Kitchen.addSon(firstClueChicken)
+        Kitchen.addSon(secondClueChicken)
+        Kitchen.addSon(alex)
         
         let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja de salgadinho jogada.")
         let secondClueRoomOne = Clue("Investigar escrivaninha", "Remédio para dormir.")
