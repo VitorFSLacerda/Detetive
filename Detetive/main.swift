@@ -3,6 +3,10 @@ import Foundation
 clearTerminal()
 clearTerminal()
 
+print(banner)
+pressEnterTo(text: "Pressione enter para continuar...", n: 2)
+clearTerminal()
+clearTerminal()
 
 print(title)
 
