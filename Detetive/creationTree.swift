@@ -229,7 +229,17 @@ class CreationTree {
                             return
                         }
                     }
-                    print("Fim de jogo.")
+                    print("Fim de jogo.\n")
+                    
+                    print("Pressione 1 para reiniciar ou 0 para sair\n")
+                    
+                    let finalChoice = readLine()
+
+                    if finalChoice == "1" {
+                        let newGame = CreationTree()
+                        newGame.runGame()
+                        return
+                    }
                     return
                     
                 } else {
