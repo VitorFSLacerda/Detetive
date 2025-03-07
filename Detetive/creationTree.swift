@@ -58,6 +58,7 @@ class CreationTree {
         kitchen.addSon(secondClueKitchen)
         kitchen.addSon(alex)
         
+        //samuel, alex e julieta
         let firstClueRoomOne = Clue("Investigar chão.", "Camisa suja.")
         let secondClueRoomOne = Clue("Investigar escrivaninha", "Remédio para dormir.")
         let clara = Suspect(
@@ -72,7 +73,7 @@ class CreationTree {
         roomOne.addSon(secondClueRoomOne)
         roomOne.addSon(clara)
         
-        
+        //enzo , andre e clara
         let firstClueRoomTwo = Clue("Investigar escrivaninha.", "Remédio antialérgico.")
         let secondClueRoomTwo = Clue("Investigar camas.", "Duas camas bagunçadas e uma totalmente arrumada.")
         let enzo = Suspect(

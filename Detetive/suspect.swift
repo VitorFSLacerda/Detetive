@@ -18,7 +18,7 @@ class Suspect: Node {
     func showEndStory(){
         for (index, _) in self.endStory.enumerated() {
             typewriter(endStory[index])
-            pressEnterTo(text: "", n: 1)
+            pressEnterTo(text: "Pressione enter para continuar...", n: 2)
             clearTerminal()
         }
     }
