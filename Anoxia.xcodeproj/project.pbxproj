@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF50A582D7218D8002C8226 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF50A572D7218D8002C8226 /* utils.swift */; };
+		2AF50A5A2D721C86002C8226 /* beginingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF50A592D721C86002C8226 /* beginingText.swift */; };
 		E50104602D6E02B90046320C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501045F2D6E02B90046320C /* main.swift */; };
+		E54010462D6FA3C700B1CDDD /* suspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54010452D6FA3C700B1CDDD /* suspect.swift */; };
+		E59FBC982D70947600184727 /* anotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC972D70947600184727 /* anotation.swift */; };
+		E59FBC9E2D70B1A300184727 /* clue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC9D2D70B1A300184727 /* clue.swift */; };
+		E59FBCA02D70B3B200184727 /* creationTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FBC9F2D70B3B200184727 /* creationTree.swift */; };
+		E5F7DBD72D71CE6D00913925 /* node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7DBD62D71CE6D00913925 /* node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E501045C2D6E02B90046320C /* Detetive */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Detetive; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF50A572D7218D8002C8226 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		2AF50A592D721C86002C8226 /* beginingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beginingText.swift; sourceTree = "<group>"; };
+		E501045C2D6E02B90046320C /* Anoxia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Anoxia; sourceTree = BUILT_PRODUCTS_DIR; };
 		E501045F2D6E02B90046320C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E54010452D6FA3C700B1CDDD /* suspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspect.swift; sourceTree = "<group>"; };
+		E59FBC972D70947600184727 /* anotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotation.swift; sourceTree = "<group>"; };
+		E59FBC9D2D70B1A300184727 /* clue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clue.swift; sourceTree = "<group>"; };
+		E59FBC9F2D70B3B200184727 /* creationTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creationTree.swift; sourceTree = "<group>"; };
+		E5F7DBD62D71CE6D00913925 /* node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,7 @@
 		E50104532D6E02B90046320C = {
 			isa = PBXGroup;
 			children = (
-				E501045E2D6E02B90046320C /* Detetive */,
+				E501045E2D6E02B90046320C /* Anoxia */,
 				E501045D2D6E02B90046320C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +63,32 @@
 		E501045D2D6E02B90046320C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E501045C2D6E02B90046320C /* Detetive */,
+				E501045C2D6E02B90046320C /* Anoxia */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E501045E2D6E02B90046320C /* Detetive */ = {
+		E501045E2D6E02B90046320C /* Anoxia */ = {
 			isa = PBXGroup;
 			children = (
+				2AF50A592D721C86002C8226 /* beginingText.swift */,
 				E501045F2D6E02B90046320C /* main.swift */,
+				E5F7DBD62D71CE6D00913925 /* node.swift */,
+				E59FBC9D2D70B1A300184727 /* clue.swift */,
+				E54010452D6FA3C700B1CDDD /* suspect.swift */,
+				E59FBC972D70947600184727 /* anotation.swift */,
+				E59FBC9F2D70B3B200184727 /* creationTree.swift */,
+				2AF50A572D7218D8002C8226 /* utils.swift */,
 			);
-			path = Detetive;
+			path = Anoxia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E501045B2D6E02B90046320C /* Detetive */ = {
+		E501045B2D6E02B90046320C /* Anoxia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E50104632D6E02B90046320C /* Build configuration list for PBXNativeTarget "Detetive" */;
+			buildConfigurationList = E50104632D6E02B90046320C /* Build configuration list for PBXNativeTarget "Anoxia" */;
 			buildPhases = (
 				E50104582D6E02B90046320C /* Sources */,
 				E50104592D6E02B90046320C /* Frameworks */,
@@ -77,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = Detetive;
+			name = Anoxia;
 			productName = Detetive;
-			productReference = E501045C2D6E02B90046320C /* Detetive */;
+			productReference = E501045C2D6E02B90046320C /* Anoxia */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E50104572D6E02B90046320C /* Build configuration list for PBXProject "Detetive" */;
+			buildConfigurationList = E50104572D6E02B90046320C /* Build configuration list for PBXProject "Anoxia" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E501045B2D6E02B90046320C /* Detetive */,
+				E501045B2D6E02B90046320C /* Anoxia */,
 			);
 		};
 /* End PBXProject section */
@@ -120,7 +141,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59FBC9E2D70B1A300184727 /* clue.swift in Sources */,
+				E5F7DBD72D71CE6D00913925 /* node.swift in Sources */,
 				E50104602D6E02B90046320C /* main.swift in Sources */,
+				E59FBCA02D70B3B200184727 /* creationTree.swift in Sources */,
+				E59FBC982D70947600184727 /* anotation.swift in Sources */,
+				E54010462D6FA3C700B1CDDD /* suspect.swift in Sources */,
+				2AF50A5A2D721C86002C8226 /* beginingText.swift in Sources */,
+				2AF50A582D7218D8002C8226 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTW4374WZ8;
+				DEVELOPMENT_TEAM = XUL3MPT9DB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -267,7 +295,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E50104572D6E02B90046320C /* Build configuration list for PBXProject "Detetive" */ = {
+		E50104572D6E02B90046320C /* Build configuration list for PBXProject "Anoxia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E50104612D6E02B90046320C /* Debug */,
@@ -276,7 +304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E50104632D6E02B90046320C /* Build configuration list for PBXNativeTarget "Detetive" */ = {
+		E50104632D6E02B90046320C /* Build configuration list for PBXNativeTarget "Anoxia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E50104642D6E02B90046320C /* Debug */,
